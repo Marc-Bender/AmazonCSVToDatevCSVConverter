@@ -11,7 +11,7 @@ then
 	else
 		cat $infile | 
 			sed -r 's/\t/;/g' |
-			cut -d\; -f7,12,31,53,54,63,66,68,69,79,83 |
+			cut -d\; -f7,12,31,53,54,63,66,68,69,75,79,83 |
 			tee > $outfile
 		# Tabelle1 equivalent generated
 	fi
