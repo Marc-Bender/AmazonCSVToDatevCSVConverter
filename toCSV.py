@@ -20,7 +20,7 @@ def toDatevCSV(completifyTempfileName, outfileName):
         bz.umsatz = matcherObj.group(4).replace(".",",")
 
         if bz.umsatz.__contains__("-"):
-            bz.umsatz.replace("-","")
+            bz.umsatz = bz.umsatz.replace("-","")
             bz.sollHabenKZ = "H"
         else:
             bz.sollHabenKZ = "S"
